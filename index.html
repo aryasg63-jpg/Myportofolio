@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arya suganda — My Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========== EFEK LATAR & DEKORASI ========== -->
+    <div class="grid-overlay"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+    <div class="particles"></div>
+    <div class="cursor-glow"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+      <a href="#home" class="nav-logo">Arya<span>,</span>Dev</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li>
+          <button
+            class="sound-toggle"
+            id="soundToggle"
+            title="Nyalakan/matikan suara"
+          >
+            🔊
+          </button>
+        </li>
+      </ul>
+      <button class="burger" id="burger">☰</button>
+    </nav>
+
+    <!-- ========== HERO / BERANDA ========== -->
+    <header id="home" class="hero">
+      <span class="geo-shape geo-1"></span>
+      <span class="geo-shape geo-2"></span>
+      <span class="geo-shape geo-3"></span>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow-row">
+          <span class="status-dot"></span>
+          <span class="status-text">TERBUKA UNTUK KOLABORASI,,</span>
+        </div>
+        <h1 class="hero-title">
+          Belajar coding,<br />satu <em>proyek</em><br />pada satu waktu.
+        </h1>
+        <p class="hero-desc">
+          Aku pelajar SMP yang lagi menekuni pengembangan web. Halaman ini
+          adalah catatan perjalanan belajarku — dari baris kode pertama sampai
+          proyek yang aku banggakan.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Lihat Proyek →</a>
+          <a href="#about" class="btn btn-outline">Kenalan Dulu Yuk</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="stat-num">7+</span
+            ><span class="stat-label">Proyek Selesai</span>
+          </div>
+          <div>
+            <span class="stat-num">3</span
+            ><span class="stat-label">Bahasa Dipelajari</span>
+          </div>
+          <div>
+            <span class="stat-num">1thn</span
+            ><span class="stat-label">Perjalanan Belajar</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="float-card card-a">🐍 Sedang belajar Python</div>
+        <div class="float-card card-b">✓ Proyek selesai</div>
+        <div class="float-card card-c">🎧 Asikin ajah boy</div>
+        <div class="code-window">
+          <div class="code-header">
+            <span class="code-dot red"></span>
+            <span class="code-dot yellow"></span>
+            <span class="code-dot green"></span>
+            <span class="code-filename">profil.js</span>
+          </div>
+          <div class="code-body">
+            <div>
+              <span class="c-key">const</span>
+              <span class="c-fn">pelajar</span> = {
+            </div>
+            <div>
+              &nbsp;&nbsp;<span class="c-tag">Arya</span>:
+              <span class="c-str">"Arya suganda"</span>,
+            </div>
+            <div>
+              &nbsp;&nbsp;<span class="c-tag">kelas</span>:
+              <span class="c-str">"9 SMP"</span>,
+            </div>
+            <div>
+              &nbsp;&nbsp;<span class="c-tag">status</span>:
+              <span class="c-str">"belajar terus"</span>,
+            </div>
+            <div>
+              &nbsp;&nbsp;<span class="c-tag">semangat</span>:
+              <span class="c-str">100</span>
+            </div>
+            <div>};</div>
+            <div class="c-com">
+              // terus belajar, terus berkarya dan terus berkembang🚀
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== TOOLS STRIP ========== -->
+    <section class="tools-strip">
+      <p class="tools-label">Bahasa & Alat yang Dipakai</p>
+      <div class="tools-row">
+        <span class="tool-item"> HTML5</span>
+        <span class="tool-item"> CSS3</span>
+        <span class="tool-item"> JavaScript</span>
+        <span class="tool-item"> VS Code</span>
+        <span class="tool-item"> Git & GitHub</span>
+        <span class="tool-item"> Python </span>
+      </div>
+    </section>
+
+    <!-- ========== TENTANG (digabung di sini, sebelum Proyek) ========== -->
+    <section id="about" class="section section-alt">
+      <div class="section-head">
+        <p class="eyebrow" style="justify-content: center">Kenalan Yuk</p>
+        <h2 class="section-title">Cerita di Balik Layar</h2>
+      </div>
+
+      <div class="about-layout">
+        <!-- Kartu profil -->
+        <div class="card profile-card reveal-left">
+          <div class="profile-avatar-wrap">
+            <div class="profile-avatar-ring"></div>
+            <div class="profile-avatar">
+              <img src="assets/img/profile.jpg" alt="Foto profil" />
+            </div>
+          </div>
+          <h3>Arya suganda</h3>
+          <p class="profile-role">Pelajar & Calon Web Developer</p>
+          <div class="profile-meta">
+            <div class="meta-row">
+              <span class="meta-label">Sekolah</span
+              ><span class="meta-value">SMP SAINS LIS</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Kelas</span
+              ><span class="meta-value">9</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Kota</span
+              ><span class="meta-value">Mataram, NTB, Indonesia</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">Status</span
+              ><span class="meta-value">Terbuka Belajar Bareng</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Konten kanan -->
+        <div class="about-content reveal-right">
+          <h2>Halo, Perkenalkan</h2>
+          <p>
+            Aku pelajar SMP yang mulai penasaran sama dunia coding sejak melihat
+            betapa serunya membuat sesuatu yang bisa dijalankan langsung di
+            layar. Dari situ, aku mulai belajar
+            <strong>HTML, CSS, JavaScript, dan Python</strong> secara otodidak
+            lewat video tutorial dan banyak coba-coba sendiri.
+          </p>
+          <p>
+            Buat aku, coding itu kayak nyusun puzzle kadang bikin frustrasi
+            kalau error terus, tapi begitu berhasil jalan, rasanya puas banget.
+            Halaman ini aku buat sebagai tempat mencatat proyek-proyek kecil
+            yang sudah aku selesaikan.
+          </p>
+
+          <h2>Perjalanan Belajar</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-year">2023 — Awal Mula</span>
+              <h4>Mengenal HTML & CSS</h4>
+              <p>
+                Mulai belajar dasar struktur halaman web dan cara
+                mempercantiknya dengan CSS.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2024 — Pertengahan Tahun</span>
+              <h4>Belajar Logika JavaScript</h4>
+              <p>
+                Mulai membuat halaman yang bisa merespons klik, input, dan
+                interaksi pengguna.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2026 — Sekarang</span>
+              <h4>Membangun Proyek Sendiri</h4>
+              <p>
+                Mulai membuat proyek-proyek kecil seperti to-do list,
+                kalkulator, dan situs ini.
+              </p>
+            </div>
+          </div>
+
+          <h2>Kemampuan</h2>
+          <div class="skills-list">
+            <div>
+              <div class="skill-row-top">
+                <span class="skill-name">HTML</span
+                ><span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="skill-row-top">
+                <span class="skill-name">CSS</span
+                ><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 70%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="skill-row-top">
+                <span class="skill-name">JavaScript</span
+                ><span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 45%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="skill-row-top">
+                <span class="skill-name">Rasa Ingin Tahu</span
+                ><span class="skill-pct">100%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Perangkat yang Dipakai</h2>
+          <div class="chip-row">
+            <span class="chip">VS Code</span>
+            <span class="chip">Git & GitHub</span>
+            <span class="chip">Figma (belajar)</span>
+            <span class="chip">Chrome DevTools</span>
+            <span class="chip">Canva</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALERI FOTO ========== -->
+    <section id="gallery" class="section">
+      <div class="section-head">
+        <p class="eyebrow" style="justify-content: center">Momen & Cerita</p>
+        <h2 class="section-title">Galeri Foto</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item tall reveal-scale">
+          <img src="assets/img/gallery1.jpg" alt="Galeri 1" />
+          <div class="gallery-overlay">
+            <div>
+              <span class="gallery-caption">Suasana Belajar Coding</span><br />
+              <span class="gallery-sub">di kamar</span>
+            </div>
+          </div>
+          <span class="gallery-zoom-icon">🔍</span>
+        </div>
+
+        <div class="gallery-item reveal-scale">
+          <img src="assets/img/gallery2.jpg" alt="Galeri 2" />
+          <div class="gallery-overlay">
+            <div>
+              <span class="gallery-caption">Latihan Bareng Teman</span
+              ><br /><span class="gallery-sub">klub komputer</span>
+            </div>
+          </div>
+          <span class="gallery-zoom-icon">🔍</span>
+        </div>
+
+        <div class="gallery-item reveal-scale">
+          <img src="assets/img/gallery3.jpg" alt="Galeri 3" />
+          <div class="gallery-overlay">
+            <div>
+              <span class="gallery-caption">Proyek Pertama Berhasil</span
+              ><br /><span class="gallery-sub">momen bangga</span>
+            </div>
+          </div>
+          <span class="gallery-zoom-icon">🔍</span>
+        </div>
+
+        <div class="gallery-item reveal-scale">
+          <img src="assets/img/gallery4.jpg" alt="Galeri 4" />
+          <div class="gallery-overlay">
+            <div>
+              <span class="gallery-caption">Ikut Lomba Sekolah</span><br /><span
+                class="gallery-sub"
+                >kompetisi coding</span
+              >
+            </div>
+          </div>
+          <span class="gallery-zoom-icon">🔍</span>
+        </div>
+
+        <div class="gallery-item tall reveal-scale">
+          <img src="assets/img/gallery5.jpg" alt="Galeri 5" />
+          <div class="gallery-overlay">
+            <div>
+              <span class="gallery-caption">Presentasi di Kelas</span
+              ><br /><span class="gallery-sub">berbagi hasil belajar</span>
+            </div>
+          </div>
+          <span class="gallery-zoom-icon">🔍</span>
+        </div>
+
+        <div class="gallery-item reveal-scale">
+          <img src="assets/img/gallery6.jpg" alt="Galeri 6" />
+          <div class="gallery-overlay">
+            <div>
+              <span class="gallery-caption">Setup Belajar Favorit</span
+              ><br /><span class="gallery-sub">tempat ngoding</span>
+            </div>
+          </div>
+          <span class="gallery-zoom-icon">🔍</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROYEK ========== -->
+    <section id="projects" class="section section-alt">
+      <div class="section-head">
+        <p class="eyebrow" style="justify-content: center">Karya-Karyaku</p>
+        <h2 class="section-title">Kumpulan Proyek</h2>
+      </div>
+
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="semua">Semua</button>
+        <button class="filter-btn" data-filter="web">Website</button>
+        <button class="filter-btn" data-filter="game">Game Kecil</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+      </div>
+
+      <div class="project-grid">
+        <div class="card project-card" data-category="tools">
+          <div class="project-thumb">
+            <img src="assets/img/project1.jpg" alt="Kalkulator Interaktif" />
+            <div class="project-thumb-overlay"></div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Tools</span>
+            <h3>Kalkulator Interaktif</h3>
+            <p>
+              Kalkulator dengan tombol animasi dan tampilan modern, dibuat untuk
+              melatih logika dasar pemrograman.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span
+              ><span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card" data-category="tools">
+          <div class="project-thumb">
+            <img src="assets/img/project2.jpg" alt="Aplikasi To-Do List" />
+            <div class="project-thumb-overlay"></div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Tools</span>
+            <h3>Aplikasi To-Do List</h3>
+            <p>
+              Aplikasi pencatat tugas harian lengkap dengan fitur tambah, hapus,
+              dan tandai selesai.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span
+              ><span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card" data-category="web">
+          <div class="project-thumb">
+            <img src="assets/img/project3.jpg" alt="Website Portofolio Ini" />
+            <div class="project-thumb-overlay"></div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Website</span>
+            <h3>Website Portofolio Ini</h3>
+            <p>
+              Situs interaktif yang sedang kamu lihat sekarang, dirancang dan
+              dibangun sepenuhnya dari nol.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span
+              ><span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card" data-category="game">
+          <div class="project-thumb">
+            <img src="assets/img/project4.jpg" alt="Batu Gunting Kertas" />
+            <div class="project-thumb-overlay"></div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Game Kecil</span>
+            <h3>Batu Gunting Kertas</h3>
+            <p>
+              Game sederhana melawan komputer, dibuat untuk melatih penggunaan
+              kondisi dan angka acak di JavaScript.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span
+              ><span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card" data-category="web">
+          <div class="project-thumb">
+            <img src="assets/img/project5.jpg" alt="Papan Cuaca Sederhana" />
+            <div class="project-thumb-overlay"></div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Website</span>
+            <h3>Papan Cuaca Sederhana</h3>
+            <p>
+              Halaman yang menampilkan info cuaca dengan tampilan kartu yang
+              bersih dan mudah dibaca.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card" data-category="game">
+          <div class="project-thumb">
+            <img src="assets/img/project6.jpg" alt="Tebak Angka" />
+            <div class="project-thumb-overlay"></div>
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Game Kecil</span>
+            <h3>Tebak Angka</h3>
+            <p>
+              Game menebak angka rahasia dengan petunjuk lebih besar atau lebih
+              kecil, melatih logika perulangan.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-band">
+      <div class="cta-box reveal">
+        <h2>Punya ide proyek atau mau kenalan?</h2>
+        <p>
+          Aku selalu senang ngobrol soal coding, ide proyek baru, atau sekadar
+          berbagi cerita belajar.
+        </p>
+        <a href="#contact" class="btn btn-primary">Hubungi Aku →</a>
+      </div>
+    </section>
+
+    <!-- ========== KONTAK (tanpa form, hanya kartu kanal) ========== -->
+    <section id="contact" class="section section-alt">
+      <div class="section-head">
+        <p class="eyebrow" style="justify-content: center">Mari Terhubung</p>
+        <h2 class="section-title">Hubungi Aku</h2>
+        <p style="color: var(--slate-400); margin-top: 12px">
+          Pilih salah satu kanal di bawah untuk mulai ngobrol.
+        </p>
+      </div>
+      <div class="contact-grid-wide">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=aryasg63@gmail.com"
+          class="card contact-method-card"
+        >
+          <span class="contact-method-icon">📧</span>
+          <span class="contact-method-label">Email akuu</span>
+          <span class="contact-method-value">Kirim Email</span>
+        </a>
+
+        <a
+          href="https://www.instagram.com/arya.elpasir5500/"
+          target="_blank"
+          class="card contact-method-card"
+        >
+          <span class="contact-method-icon">📷</span>
+          <span class="contact-method-label">Instagram</span>
+          <span class="contact-method-value">@arya.elpasir5500</span>
+        </a>
+
+        <a
+          href="https://github.com/aryasg63-jpg"
+          target="_blank"
+          class="card contact-method-card"
+        >
+          <span class="contact-method-icon">💻</span>
+          <span class="contact-method-label">GitHub</span>
+          <span class="contact-method-value">Arya ajaa</span>
+        </a>
+
+        <a
+          href="https://wa.me/6283138160750"
+          target="_blank"
+          class="card contact-method-card"
+        >
+          <span class="contact-method-icon">💬</span>
+          <span class="contact-method-label">WhatsApp</span>
+          <span class="contact-method-value">Chat Sekarang</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <a href="#home" class="nav-logo">Nama<span>.</span>Kamu</a>
+      <ul class="footer-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <p class="footer-copy">
+        © 2026 Nama Kamu. Dibuat dengan HTML, CSS, & JavaScript.
+      </p>
+    </footer>
+
+    <!-- ========== WIDGET PEMUTAR MUSIK ========== -->
+    <div class="music-player" id="musicPlayer">
+      <button class="music-toggle-btn" id="musicToggleBtn">▶</button>
+      <div class="music-info">
+        <span class="music-title">Lo-fi Ambient</span>
+        <span class="music-sub">Musik latar</span>
+      </div>
+      <div class="music-bars">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <!-- ========== LIGHTBOX GALERI ========== -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose">✕</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">←</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">→</button>
+        <img id="lightboxImg" src="" alt="Foto galeri diperbesar" />
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="projects.js"></script>
+    <script src="gallery.js"></script>
+  </body>
+</html>
